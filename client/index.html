@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>Customers Data</title>
+
+	<style type="text/css">
+		table{
+			width: 500px;
+			border: 1px solid black;
+		}
+		td{
+			border: 1px solid black;
+		}
+	</style>
+
+	<script src="angular/angular.js" charset="utf-8"></script>
+	<script src="angular-route/angular-route.js" charset="utf-8"></script>
+	<script src="assets/main.js" charset="utf-8"></script>
+    <script src="./assets/factories/customerFactory.js" charset="utf-8"></script>
+    <script src="./assets/controllers/customersController.js" charset="utf-8"></script>
+
+</head>
+<body>
+
+	<h2>Welcome!</h2>
+	<a href="#/new">Create new Customers</a>
+	<a href="#/display">Show Customers</a>
+	<div ng-view=""></div>
+
+</body>
+</html>

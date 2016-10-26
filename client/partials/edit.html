@@ -1,0 +1,17 @@
+<div ng-controller="customersCtrl as CC">
+	
+	<h2>Edit Customer</h2>
+	<form>
+		<h4>Name:
+		<input type="text" ng-model="CC.updateCustomer.name" ng-value="CC.oneCustomer.name">
+		</h4>
+		<h4>City:
+		<input type="text" ng-model="CC.updateCustomer.city" ng-value="CC.oneCustomer.city">
+		</h4>
+		<h4>Age:
+		<input type="text" ng-model="CC.updateCustomer.age" ng-value="CC.oneCustomer.age">
+		</h4>
+		<input type="submit" value="Submit" ng-click="CC.editCustomer(CC.oneCustomer._id)">
+	</form>
+
+</div>

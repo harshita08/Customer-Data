@@ -1,0 +1,22 @@
+<div ng-controller="customersCtrl as CC">
+	
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>City</th>
+			<th>Age</th>
+			<th>Actions</th>
+		</tr>
+		<tr ng-repeat="cust in CC.allCustomers">
+			<td>{{ cust.name }}</td>
+			<td>{{ cust.city }}</td>
+			<td>{{ cust.age }}</td>
+			<td>
+				<button ng-click="CC.deleteCustomer(cust._id)">Delete</button>
+				<a href="#/show/{{cust._id}}"><button ng-click="CC.getOneCustomer(cust._id)">Show</button></a>
+				<a href="#/edit/{{cust._id}}"><button ng-click="CC.getOneCustomer(cust_.id)">Edit</button></a>
+			</td>
+		</tr>
+	</table>
+
+</div>

@@ -1,0 +1,12 @@
+<div ng-controller="customersCtrl as CC">
+	
+	<h2>Create new Customers</h2>
+	<form ng-submit="CC.addCustomer()">
+		<h4>Name: <input type="text" ng-model="CC.newCustomer.name"></h4>
+		<h4>City: <input type="text" ng-model="CC.newCustomer.city"></h4>
+		<h4>Age: <input type="text" ng-model="CC.newCustomer.age"></h4>
+
+		<input type="submit" value="Submit">
+	</form>
+
+</div>
